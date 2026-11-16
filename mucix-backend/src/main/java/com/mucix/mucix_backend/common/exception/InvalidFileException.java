@@ -1,4 +1,13 @@
 package com.mucix.mucix_backend.common.exception;
 
-public class InvalidFileException {
+public class InvalidFileException extends RuntimeException {
+
+    public InvalidFileException(String message) {
+        super(message);
+    }
+
+    public InvalidFileException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
+
